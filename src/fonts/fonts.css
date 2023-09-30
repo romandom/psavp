@@ -2,3 +2,38 @@
     font-family: 'rabikiso';
     src: url('~@/assets/fonts/Righteous-Regular.ttf') format('truetype');
 }
+
+@font-face {
+    font-family: 'blackopsone';
+    src: url('~@/assets/fonts/BlackOpsOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'robotocondensedbold';
+    src: url('~@/assets/fonts/RobotoCondensed-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'robotocondensedbolditalic';
+    src: url('~@/assets/fonts/RobotoCondensed-BoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'robotocondenseditalic';
+    src: url('~@/assets/fonts/RobotoCondensed-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'robotocondensedlight';
+    src: url('~@/assets/fonts/RobotoCondensed-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'robotocondensedlightitalic';
+    src: url('~@/assets/fonts/RobotoCondensed-LightItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'robotocondensedregular';
+    src: url('~@/assets/fonts/RobotoCondensed-Regular.ttf') format('truetype');
+}

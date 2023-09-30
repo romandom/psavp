@@ -25,6 +25,9 @@ module.exports = {
         'righteous': ['Righteous'],
         'roboto': ['Roboto', 'sans-serif'],
       },
+      colors: {
+        'psavp-yellow': '#F9B506',
+      }
     },
   },
   variants: {
