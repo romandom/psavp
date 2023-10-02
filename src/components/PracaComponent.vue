@@ -8,7 +8,7 @@
                           :circular="true" :autoPlay="true" :transitionInterval="5000" :showItemNavigatorsOnHover="true"
                            :showItemNavigators="true" :showThumbnails="false">
                     <template #item="slotProps">
-                        <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt"
+                        <img v-if="slotProps.item.itemImageSrc" :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt"
                              style="width: 100%; display: block"/>
                     </template>
                     <template #caption="slotProps">
