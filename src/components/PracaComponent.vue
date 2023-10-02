@@ -9,10 +9,8 @@
                           :circular="true" :autoPlay="true" :transitionInterval="5000" :showItemNavigatorsOnHover="true"
                           :showItemNavigators="true" :showThumbnails="false">
                     <template #item="slotProps">
-                        <div v-if="slotProps.item">
                             <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt"
                                  style="width: 100%; display: block"/>
-                        </div>
                     </template>
                     <template #caption="slotProps">
                         <div class="text-xl font-bold text-center">
@@ -43,8 +41,8 @@ export default {
         return {
             images: [
                 {
-                    itemImageSrc: 'src/assets/slider/1.jpg',
-                    thumbnailImageSrc: 'src/assets/slider/1.jpg',
+                    itemImageSrc: 'src/assets/slider/skuska.png',
+                    thumbnailImageSrc: 'src/assets/slider/skuska.jpg',
                     alt: 'Čistenie silážnej jamy',
                     title: 'Čistenie silážnej jamy'
                 },
