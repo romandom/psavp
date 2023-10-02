@@ -54,7 +54,14 @@ export default {
         };
     },
     mounted() {
-        PhotoService.getImages().then((data) => (this.images = data));
+        PhotoService.getImages()
+            .then((data) => {
+                this.images = data;
+            })
+            .catch((error) => {
+                console.error('Error loading images:', error);
+                // Handle the error here, e.g., display a placeholder image or an error message.
+            });
     }
 }
 </script>
