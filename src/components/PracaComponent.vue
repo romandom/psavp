@@ -1,15 +1,18 @@
 <template>
     <div class="flex flex-col bg-black xs:h-[480px] xsm:h-[600px] sm:h-[750px] md:h-[900px] lg:h-[1000px] xl:h-[1200px] mt-[20%]">
-        <h1 class="text-center font text-white font-semibold xs:text-xl xsm:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl mt-[3%]">NAŠA PRÁCA</h1>
+        <h1 class="text-center font text-white font-semibold xs:text-xl xsm:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl mt-[3%]">
+            NAŠA PRÁCA</h1>
         <div class="card md:flex md:justify-content-center mx-auto z-10  bg-black">
             <div class="card md:flex md:justify-content-center lg:mx-[10%] xl:mx-0">
                 <Galleria :value="images" :responsiveOptions="responsiveOptions" containerStyle="max-width: 900px"
                           :numVisible="5"
                           :circular="true" :autoPlay="true" :transitionInterval="5000" :showItemNavigatorsOnHover="true"
-                           :showItemNavigators="true" :showThumbnails="false">
+                          :showItemNavigators="true" :showThumbnails="false">
                     <template #item="slotProps">
-                        <img v-if="slotProps.item.itemImageSrc" :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt"
-                             style="width: 100%; display: block"/>
+                        <div v-if="slotProps.item">
+                            <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt"
+                                 style="width: 100%; display: block"/>
+                        </div>
                     </template>
                     <template #caption="slotProps">
                         <div class="text-xl font-bold text-center">
@@ -20,10 +23,13 @@
             </div>
         </div>
         <div class="w-[100%] h-[1px] bg-white"></div>
-        <div class="text-center font text-white font-semibold md:text-4xl lg:text-5xl xs:mt-[2%] lg:mt-[3%]">Kontakt:</div>
+        <div class="text-center font text-white font-semibold md:text-4xl lg:text-5xl xs:mt-[2%] lg:mt-[3%]">Kontakt:
+        </div>
         <div class="text-center font text-white font-semibold md:text-xl lg:text-2xl mt-[1.5%]">Dávid Hrubovský</div>
-        <div class="text-center font text-white font-semibold md:text-xl lg:text-2xl mt-[0.5%]"><a href="tel:+421 915 237 781">+421 915 237 781</a></div>
-        <div class="text-center font text-white font-semibold md:text-xl lg:text-2xl mt-[0.5%]"><a href="mailto:david.hrubovsky@psavp.sk">david.hrubovsky@psavp.sk</a></div>
+        <div class="text-center font text-white font-semibold md:text-xl lg:text-2xl mt-[0.5%]"><a
+                href="tel:+421 915 237 781">+421 915 237 781</a></div>
+        <div class="text-center font text-white font-semibold md:text-xl lg:text-2xl mt-[0.5%]"><a
+                href="mailto:david.hrubovsky@psavp.sk">david.hrubovsky@psavp.sk</a></div>
     </div>
 </template>
 
@@ -110,6 +116,7 @@ body {
     background-color: #F9B506;
     opacity: 75%;
 }
+
 ::v-deep(.p-galleria .p-galleria-indicators .p-galleria-indicator.p-highlight button) {
     background-color: #F9B506;
 }
