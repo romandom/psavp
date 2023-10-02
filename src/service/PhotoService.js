@@ -2,8 +2,8 @@ export const PhotoService = {
     getData() {
         return [
             {
-                itemImageSrc: 'src/assets/slider/1.jpg',
-                thumbnailImageSrc: 'src/assets/slider/1.jpg',
+                itemImageSrc: 'assets/slider/1.jpg',
+                thumbnailImageSrc: 'assets/slider/1.jpg',
                 alt: 'Čistenie silážnej jamy',
                 title: 'Čistenie silážnej jamy'
             },
