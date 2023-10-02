@@ -22,7 +22,7 @@
         <div class="w-[100%] h-[1px] bg-white"></div>
         <div class="text-center font text-white font-semibold md:text-4xl lg:text-5xl xs:mt-[2%] lg:mt-[3%]">Kontakt:</div>
         <div class="text-center font text-white font-semibold md:text-xl lg:text-2xl mt-[1.5%]">Dávid Hrubovský</div>
-        <div class="text-center font text-white font-semibold md:text-xl lg:text-2xl mt-[0.5%]"><a href="tel:+421 944 901 550">+421 905 885 694</a></div>
+        <div class="text-center font text-white font-semibold md:text-xl lg:text-2xl mt-[0.5%]"><a href="tel:+421 915 237 781">+421 915 237 781</a></div>
         <div class="text-center font text-white font-semibold md:text-xl lg:text-2xl mt-[0.5%]"><a href="mailto:david.hrubovsky@psavp.sk">david.hrubovsky@psavp.sk</a></div>
     </div>
 </template>
