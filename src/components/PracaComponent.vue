@@ -29,14 +29,38 @@
 
 <script>
 import SliderComponent from "@/components/SliderComponent.vue";
-import {PhotoService} from "@/service/PhotoService";
 
 export default {
     name: "PracaComponent",
     components: {SliderComponent},
     data() {
         return {
-            images: null,
+            images: [
+                {
+                    itemImageSrc: 'src/assets/slider/1.jpg',
+                    thumbnailImageSrc: 'src/assets/slider/1.jpg',
+                    alt: 'Čistenie silážnej jamy',
+                    title: 'Čistenie silážnej jamy'
+                },
+                {
+                    itemImageSrc: 'src/assets/slider/2.jpg',
+                    thumbnailImageSrc: 'src/assets/slider/2.jpg',
+                    alt: 'Čistenie silážnej jamy',
+                    title: 'Čistenie silážnej jamy'
+                },
+                {
+                    itemImageSrc: 'src/assets/slider/3.jpg',
+                    thumbnailImageSrc: 'src/assets/slider/3.jpg',
+                    alt: 'Prevoz materiálu a vyrovnávanie pozemku',
+                    title: 'Prevoz materiálu a vyrovnávanie pozemku'
+                },
+                {
+                    itemImageSrc: 'src/assets/slider/4.jpg',
+                    thumbnailImageSrc: 'src/assets/slider/4.jpg',
+                    alt: 'Prevoz materiálu a vyrovnávanie pozemku',
+                    title: 'Prevoz materiálu a vyrovnávanie pozemku'
+                },
+            ],
             responsiveOptions: [
                 {
                     breakpoint: '991px',
@@ -53,16 +77,6 @@ export default {
             ]
         };
     },
-    mounted() {
-        PhotoService.getImages()
-            .then((data) => {
-                this.images = data;
-            })
-            .catch((error) => {
-                console.error('Error loading images:', error);
-                // Handle the error here, e.g., display a placeholder image or an error message.
-            });
-    }
 }
 </script>
 
