@@ -4,20 +4,22 @@
             NAŠA PRÁCA</h1>
         <div class="card md:flex md:justify-content-center mx-auto z-10  bg-black">
             <div class="card md:flex md:justify-content-center lg:mx-[10%] xl:mx-0">
-<!--                <Galleria :value="images" :responsiveOptions="responsiveOptions" containerStyle="max-width: 900px"-->
-<!--                          :numVisible="5"-->
-<!--                          :circular="true" :autoPlay="true" :transitionInterval="5000" :showItemNavigatorsOnHover="true"-->
-<!--                          :showItemNavigators="true" :showThumbnails="false">-->
-<!--                    <template #item="slotProps">-->
-<!--                            <img :src="require(slotProps.item)" :alt="slotProps.item.alt"-->
-<!--                                 style="width: 100%; display: block"/>-->
-<!--                    </template>-->
-<!--                    <template #caption="slotProps">-->
-<!--                        <div class="text-xl font-bold text-center">-->
-<!--                            {{ slotProps.item.title }}-->
-<!--                        </div>-->
-<!--                    </template>-->
-<!--                </Galleria>-->
+                <Galleria :value="images" :responsiveOptions="responsiveOptions" containerStyle="max-width: 900px"
+                          :numVisible="5"
+                          :circular="true" :autoPlay="true" :transitionInterval="5000" :showItemNavigatorsOnHover="true"
+                          :showItemNavigators="true" :showThumbnails="false">
+                    <template #item="slotProps">
+                        <div  v-if="slotProps.item.itemImageSrc">
+                            <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt"
+                                 style="width: 100%; display: block"/>
+                        </div>
+                    </template>
+                    <template #caption="slotProps">
+                        <div class="text-xl font-bold text-center">
+                            {{ slotProps.item.title }}
+                        </div>
+                    </template>
+                </Galleria>
             </div>
         </div>
         <div class="w-[100%] h-[1px] bg-white"></div>
@@ -41,26 +43,26 @@ export default {
         return {
             images: [
                 {
-                    itemImageSrc: '@/assets/slider/1.jpg',
-                    thumbnailImageSrc: '@/assets/slider/1.jpg',
+                    itemImageSrc: 'src/assets/slider/1.jpg',
+                    thumbnailImageSrc: 'src/assets/slider/1.jpg',
                     alt: 'Čistenie silážnej jamy',
                     title: 'Čistenie silážnej jamy'
                 },
                 {
-                    itemImageSrc: '@/assets/slider/2.jpg',
-                    thumbnailImageSrc: '@/assets/slider/2.jpg',
+                    itemImageSrc: 'src/assets/slider/2.jpg',
+                    thumbnailImageSrc: 'src/assets/slider/2.jpg',
                     alt: 'Čistenie silážnej jamy',
                     title: 'Čistenie silážnej jamy'
                 },
                 {
-                    itemImageSrc: '@/assets/slider/3.jpg',
-                    thumbnailImageSrc: '@/assets/slider/3.jpg',
+                    itemImageSrc: 'src/assets/slider/3.jpg',
+                    thumbnailImageSrc: 'src/assets/slider/3.jpg',
                     alt: 'Prevoz materiálu a vyrovnávanie pozemku',
                     title: 'Prevoz materiálu a vyrovnávanie pozemku'
                 },
                 {
-                    itemImageSrc: '@/assets/slider/4.jpg',
-                    thumbnailImageSrc: '@/assets/slider/4.jpg',
+                    itemImageSrc: 'src/assets/slider/4.jpg',
+                    thumbnailImageSrc: 'src/assets/slider/4.jpg',
                     alt: 'Prevoz materiálu a vyrovnávanie pozemku',
                     title: 'Prevoz materiálu a vyrovnávanie pozemku'
                 },
