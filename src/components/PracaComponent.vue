@@ -9,10 +9,8 @@
                           :circular="true" :autoPlay="true" :transitionInterval="5000" :showItemNavigatorsOnHover="true"
                           :showItemNavigators="true" :showThumbnails="false">
                     <template #item="slotProps">
-                        <div  v-if="slotProps.item.itemImageSrc">
                             <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt"
                                  style="width: 100%; display: block"/>
-                        </div>
                     </template>
                     <template #caption="slotProps">
                         <div class="text-xl font-bold text-center">
@@ -35,6 +33,10 @@
 
 <script>
 import SliderComponent from "@/components/SliderComponent.vue";
+import im1 from '@/assets/slider/1.jpg';
+import im2 from '@/assets/slider/2.jpg';
+import im3 from '@/assets/slider/3.jpg';
+import im4 from '@/assets/slider/4.jpg';
 
 export default {
     name: "PracaComponent",
@@ -43,25 +45,25 @@ export default {
         return {
             images: [
                 {
-                    itemImageSrc: 'src/assets/slider/1.jpg',
+                    itemImageSrc: im1,
                     thumbnailImageSrc: 'src/assets/slider/1.jpg',
                     alt: 'Čistenie silážnej jamy',
                     title: 'Čistenie silážnej jamy'
                 },
                 {
-                    itemImageSrc: 'src/assets/slider/2.jpg',
+                    itemImageSrc: im2,
                     thumbnailImageSrc: 'src/assets/slider/2.jpg',
                     alt: 'Čistenie silážnej jamy',
                     title: 'Čistenie silážnej jamy'
                 },
                 {
-                    itemImageSrc: 'src/assets/slider/3.jpg',
+                    itemImageSrc: im3,
                     thumbnailImageSrc: 'src/assets/slider/3.jpg',
                     alt: 'Prevoz materiálu a vyrovnávanie pozemku',
                     title: 'Prevoz materiálu a vyrovnávanie pozemku'
                 },
                 {
-                    itemImageSrc: 'src/assets/slider/4.jpg',
+                    itemImageSrc: im4,
                     thumbnailImageSrc: 'src/assets/slider/4.jpg',
                     alt: 'Prevoz materiálu a vyrovnávanie pozemku',
                     title: 'Prevoz materiálu a vyrovnávanie pozemku'
