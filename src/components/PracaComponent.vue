@@ -20,7 +20,7 @@
                 </Galleria>
             </div>
         </div>
-        <div>
+        <div id="kontakt">
             <h1 class="text-center font text-white font-semibold xs:text-4xl lg:text-5xl">Nezáväzný dopyt:</h1>
             <form ref="form">
                 <div class="lg:grid xs:flex xs:flex-col lg:grid-cols-2 xs:w-[75%] sm:w-[45%] mx-auto gap-x-10 gap-y-5 mt-[2%]">
@@ -56,6 +56,7 @@
                 </div>
                 <div class="text-center my-[2%]">
                     <Button class="text-white bg-psavp-yellow px-[1%] py-[0.5%]" label="Odoslať"
+                            :loading="loading"
                             @click="sendEmail()"
                             :disabled="!(this.name.length > 0 &&
             validEmail(this.email) &&
@@ -88,6 +89,7 @@ export default {
     components: {SliderComponent},
     data() {
         return {
+            loading: false,
             email: "",
             emailBlured: false,
             valid: false,
@@ -141,6 +143,7 @@ export default {
     },
     methods: {
         sendEmail: function () {
+            this.loading = true;
             emailjs
                 .sendForm(
                     "service_2q2jsba",
@@ -152,6 +155,7 @@ export default {
                     (result) => {
                         this.$forceUpdate();
                         console.log("SUCCESS!", result.text);
+                        this.loading = false;
                         window.location.reload();
                     },
                     (error) => {
