@@ -2,7 +2,7 @@
     <div class="flex flex-col bg-black mt-[20%] pb-[5%]">
         <h1 class="text-center font text-white font-semibold xs:text-xl xsm:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl mt-[3%] z-20">
             NAŠA PRÁCA</h1>
-        <div class="card md:flex md:justify-content-center sm:mx-auto z-10 bg-black">
+        <div class="card md:flex md:justify-content-center sm:mx-auto z-10 bg-black overflow-x-hidden">
             <div class="card md:flex md:justify-content-center lg:mx-[10%] xl:mx-0 xs:scale-125 xsm:scale-100">
                 <Galleria :value="images" :responsiveOptions="responsiveOptions" containerStyle="max-width: 900px"
                           :numVisible="5"
