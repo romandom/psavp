@@ -103,8 +103,8 @@ export default {
                 {
                     itemImageSrc: im1,
                     thumbnailImageSrc: 'src/assets/slider/1.jpg',
-                    alt: 'Čistenie silážnej jamy',
-                    title: 'Čistenie silážnej jamy'
+                    alt: 'Prevoz materiálu a vyrovnávanie pozemku',
+                    title: 'Prevoz materiálu a vyrovnávanie pozemku'
                 },
                 {
                     itemImageSrc: im2,
@@ -115,8 +115,8 @@ export default {
                 {
                     itemImageSrc: im3,
                     thumbnailImageSrc: 'src/assets/slider/3.jpg',
-                    alt: 'Prevoz materiálu a vyrovnávanie pozemku',
-                    title: 'Prevoz materiálu a vyrovnávanie pozemku'
+                    alt: 'Čistenie silážnej jamy',
+                    title: 'Čistenie silážnej jamy'
                 },
                 {
                     itemImageSrc: im4,
