@@ -5,9 +5,10 @@ import PonukaComponent from "@/components/PonukaComponent.vue";
 import SluzbyComponent from "@/components/SluzbyComponent.vue";
 import BagerComponent from "@/components/BagerComponent.vue";
 import PracaComponent from "@/components/PracaComponent.vue";
+import useMeta from 'vue-meta';
 
 // Nastavenie meta tagov pre SEO
-meta.value = {
+useMeta.value = {
     title: 'PSAVP',
     meta: [
         {
