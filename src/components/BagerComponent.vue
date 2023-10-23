@@ -6,9 +6,9 @@
                 <img src="@/assets/bager.jpg" alt="Bager Komatsu wb97s-5"/>
             </div>
             <div class="xs:py-[5%] xs:h-[50%] md-h-[100%] md:w-[50%] my-auto xs:mx-auto md:mx-0 xs:px-[10%] sm:px-[20%] md:px-[5%] xsm:text-[17px] sm:text-lg lg:text-2xl xl:text-3xl flex flex-col gap-5 font">
-                <p>Rýpadlo-nakladač <b>Komatsu WB97s</b> s výkonom 74KW a hlbkovým dosahom až 6,5 metra.</p>
+                <p>Rýpadlo-nakladač <b>Komatsu WB97s</b> s výkonom 74KW a hĺbkovým dosahom až 6,5 metra.</p>
                 <p>Stroj je
-                    vybavený <b>podpokopovými lyžicami</b> 30, 60 a 90cm, <b>hydraulickou svahovacou lyžicou</b> so šírkou 150 cm, a
+                    vybavený <b>podpokopovými lyžicami</b> 30, 60 a 90cm, <b>hydraulickou svahovacou lyžicou</b> so šírkou 150 cm,
                     <b>prednou lyžicou so žralokom</b> a <b>paletizačnými vidlami</b>.</p>
 
             </div>
