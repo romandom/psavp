@@ -1,7 +1,7 @@
 <template>
     <div class="font">
         <div class="relative">
-            <img src="@/assets/titulka/titulka.png" alt="Bager PSAVP">
+            <img src="../assets/titulka/titulka-mensia.png" alt="Bager PSAVP">
             <img src="@/assets/titulka/kruho.svg" alt="Kruh" class="xs:hidden lg:block absolute right-[5%] top-[35%] w-[18%]">
             <img src="@/assets/titulka/PSAVP.svg" alt="PSAVP logo" class="absolute right-[5%] top-[10%] w-[40%]">
             <h2 @click="scrollToPraca" class="xs:hidden lg:block font text-psavp-yellow absolute 2xl:right-[10%] 2xl:top-[40%] lg:right-[9%] lg:top-[39%] lg:text-2xl xl:text-3xl hover:cursor-pointer">KONTAKT</h2>
