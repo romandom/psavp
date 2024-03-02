@@ -31,9 +31,6 @@ window.addEventListener('scroll', function() {
 function handleHashChange() {
     // Získajte aktuálny hash tag z URL adresy
     const currentHash = window.location.hash;
-
-    // Tu môžete reagovať na zmenu hash tagu
-    console.log('Aktuálny hash tag:', currentHash);
 }
 
 // Spúšťanie funkcií po načítaní a pred odstránením komponentu
