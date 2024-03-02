@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col bg-black mt-[20%] pb-[5%]">
+    <div class="flex flex-col bg-black mt-[20%] pb-[5%] font">
         <h1 class="text-center font text-white font-semibold xs:text-xl xsm:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl mt-[3%] z-20">
             NAŠA PRÁCA</h1>
         <div class="card md:flex md:justify-content-center sm:mx-auto z-10 bg-black overflow-x-hidden">
@@ -13,14 +13,14 @@
                              style="width: 100%; display: block"/>
                     </template>
                     <template #caption="slotProps">
-                        <div class="xs:text-[10px] sm:text-xl font-bold text-center">
+                        <div class="xs:text-[10px] sm:text-xl font-bold text-center font">
                             {{ slotProps.item.title }}
                         </div>
                     </template>
                 </Galleria>
             </div>
         </div>
-        <div id="kontakt">
+        <div id="kontakt" class="font">
             <h1 class="text-center font text-white font-semibold xs:text-4xl lg:text-5xl">Nezáväzný dopyt:</h1>
             <form ref="form">
                 <div class="lg:grid xs:flex xs:flex-col lg:grid-cols-2 xs:w-[75%] sm:w-[45%] mx-auto gap-x-10 gap-y-5 mt-[2%]">
@@ -186,7 +186,7 @@ export default {
 
 <style scoped>
 .font {
-    font-family: robotocondensedbold;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 html {

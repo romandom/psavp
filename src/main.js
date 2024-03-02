@@ -3,6 +3,7 @@ import "primevue/resources/primevue.min.css"; /* Deprecated */
 import "primeicons/primeicons.css";
 import "./index.css";
 import "./flags.css";
+import './fonts/fonts.css'
 
 import { createApp } from "vue";
 import App from "./App.vue";

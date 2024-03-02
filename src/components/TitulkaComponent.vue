@@ -1,5 +1,5 @@
 <template>
-    <div class="">
+    <div class="font">
         <div class="relative">
             <img src="@/assets/titulka/titulka.png" alt="Bager PSAVP">
             <img src="@/assets/titulka/kruho.svg" alt="Kruh" class="xs:hidden lg:block absolute right-[5%] top-[35%] w-[18%]">
@@ -33,6 +33,6 @@ export default {
 
 <style scoped>
 .font {
-    font-family: robotocondensedbold;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 </style>

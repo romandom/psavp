@@ -45,6 +45,6 @@ export default {
 
 <style scoped>
 .font {
-    font-family: robotocondensedbold;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 </style>

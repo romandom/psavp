@@ -1,5 +1,5 @@
 <template>
-    <div class="w-[100%] relative">
+    <div class="w-[100%] relative font">
         <div class="xs:h-[380px] xsm:h-[210px] sm:h-[300px] md:h-[350px] lg:h-[480px] xl:h-[750px] w-[100%] -skew-y-6 bg-[#E1E1E1] mt-[10%] z-0">
         </div>
         <div class="xs:w-[90%] xsm:w-[60%] max-w-[922px] absolute bottom-[17%] right-[5%]">
@@ -30,6 +30,6 @@ export default {
 
 <style scoped>
 .font {
-    font-family: robotocondensedbold;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 </style>

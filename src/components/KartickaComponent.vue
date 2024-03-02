@@ -1,5 +1,5 @@
 <template>
-    <div :class="tmavsi ? 'bg-[#F5F4F4]' : 'bg-white'" class="xs:w-[250px] xsm:w-[350px] sm:w-[400px] md:w-[200px] lg:w-[280px] xl:w-[340px] 2xl:w-[370px] xs:h-[250px] xsm:h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] xl:h-[420px] 2xl:h-[450px] lg:hover:scale-110 lg:transition lg:duration-200 tien">
+    <div :class="tmavsi ? 'bg-[#F5F4F4]' : 'bg-white'" class="font xs:w-[250px] xsm:w-[350px] sm:w-[400px] md:w-[200px] lg:w-[280px] xl:w-[340px] 2xl:w-[370px] xs:h-[250px] xsm:h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] xl:h-[420px] 2xl:h-[450px] lg:hover:scale-110 lg:transition lg:duration-200 tien">
         <h1 class="font font-semibold text-center xs:text-lg xsm:text-xl sm:text-2xl lg:text-3xl px-[5%] pt-[5%] pb-[5%]">{{ nadpis }}</h1>
         <ul>
             <li class="font font-normal xs:text-[16px] xsm:text-[16px] sm:text-[18px] md:text-[15px] lg:text-lg xl:text-xl px-[10%] md:pt-[5%]" v-for="(item, index) in body" :key="index">
@@ -57,6 +57,8 @@ ul {
     padding: 0;
 }
 
-
+.font {
+    font-family: 'Roboto Condensed', sans-serif;
+}
 
 </style>

@@ -15,7 +15,8 @@
     "primevue": "^3.34.1",
     "service": "^0.1.4",
     "vue": "^3.3.4",
-    "vue-meta": "^2.4.0"
+    "vue-meta": "^2.4.0",
+    "vue-router": "^4.3.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",
